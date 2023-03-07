@@ -64,7 +64,10 @@ SECURE_CONTENT_TYPE_NOSNIFF = env.bool(
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 # MEDIA
 # ------------------------------------------------------------------------------
-
+STATIC_ROOT = env("DJANGO_STATIC")
+# MEDIA
+# ------------------------------------------------------------------------------
+MEDIA_ROOT = env("DJANGO_MEDIA")
 # EMAIL
 # ------------------------------------------------------------------------------
 # https://docs.djangoproject.com/en/dev/ref/settings/#default-from-email
