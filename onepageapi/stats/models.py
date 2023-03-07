@@ -20,4 +20,4 @@ class UserForcing(models.Model):
         ordering = ['created_at']
 
     def __str__(self):
-        return self.tg_user
+        return self.tg_user.tg_id
